@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Portfolio.github.io/static/css/main.0e6fdc52.css",
+    "main.js": "/Portfolio.github.io/static/js/main.dec82dba.js",
+    "static/media/about-image-horizeontal.png": "/Portfolio.github.io/static/media/about-image-horizeontal.19cd0fdd4bf240c8bd56.png",
+    "static/media/about-image-vertical.png": "/Portfolio.github.io/static/media/about-image-vertical.9dfa8b260d4dbf176a54.png",
+    "static/media/scroll-icon-animation.gif": "/Portfolio.github.io/static/media/scroll-icon-animation.d37850824a88eeade434.gif",
+    "static/media/mongodb.png": "/Portfolio.github.io/static/media/mongodb.bca2834f9afcb40a5ae5.png",
+    "index.html": "/Portfolio.github.io/index.html",
+    "main.0e6fdc52.css.map": "/Portfolio.github.io/static/css/main.0e6fdc52.css.map",
+    "main.dec82dba.js.map": "/Portfolio.github.io/static/js/main.dec82dba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e6fdc52.css",
+    "static/js/main.dec82dba.js"
+  ]
+}

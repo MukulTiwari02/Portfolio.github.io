@@ -9,11 +9,11 @@ const Navbar = (props)=> {
         <nav className = "nav">
             <ul className = "nav-items">
                 <li className = "nav-head"><a href = "">Portfolio</a></li>
-                {(deviceWidth>=1450) && <li className = "nav-home nav-links nav-first-link"><a href = "#hero">Home</a></li>}
-                {(deviceWidth>=1450) && <li className = "nav-about nav-links"><a href = "#About">About</a></li>}
-                {(deviceWidth>=1450) && <li className = "nav-about nav-links"><a href = "#Projects">Projects</a></li>}
-                {(deviceWidth>=1450) && <li className = "nav-contact nav-links nav-last-link"><a href = "#Contact">Contact</a></li>}
-                {(deviceWidth<1450) && <MenuButton />}
+                {(deviceWidth>=769) && <li className = "nav-home nav-links nav-first-link"><a href = "#hero">Home</a></li>}
+                {(deviceWidth>=769) && <li className = "nav-about nav-links"><a href = "#About">About</a></li>}
+                {(deviceWidth>=769) && <li className = "nav-about nav-links"><a href = "#Projects">Projects</a></li>}
+                {(deviceWidth>=769) && <li className = "nav-contact nav-links nav-last-link"><a href = "#Contact">Contact</a></li>}
+                {(deviceWidth<769) && <MenuButton />}
             </ul>
         </nav>
     )

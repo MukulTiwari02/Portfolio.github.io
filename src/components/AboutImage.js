@@ -4,10 +4,10 @@ import imageVertical from '../Assets/Images/about-image-vertical.png'
 
 const AboutImage = () => {
   const deviceWidth = window.innerWidth;
-  const image = (deviceWidth>=1450) ? imageHorizontal : imageVertical;
+  const image = (deviceWidth>1024) ? imageHorizontal : imageVertical;
   return (
     <img src={image} alt="About Image" />
   )
 }
 
-export default AboutImage
+export default AboutImage 

@@ -12,18 +12,22 @@ html{
     scroll-behavior: smooth;
     scroll-snap-type: proximity;
     background-color: var(--primary-color);
+    /* overflow-x: hidden; */
 }
 
 ::-webkit-scrollbar
 {
     background-color: var(--scrollbar-color-bg);
-    border-radius: 25%;
-    width: 10px;
+    /* border-radius: 25%; */
+    width: 7px;
+    margin: 20px;
+    transition: background-color 1.2s ease;
 }
 ::-webkit-scrollbar-thumb
 {
+    transition: background-color 1.2s ease;
     background-color: var(--scrollbar-thumb-bg);
-    border-radius: 20%;
+    border-radius: 30px;
 }
 
 :root
@@ -31,7 +35,7 @@ html{
     --primary-color : black;
     --secondary-color : rgb(128, 202, 226);
     --accent-color : rgb(231, 104, 65);
-    --scrollbar-color-bg : white;
+    --scrollbar-color-bg : black;
     --scrollbar-thumb-bg : rgb(173, 200, 230);
     --text-colour : rgb(2, 2, 2);
 }
@@ -47,8 +51,8 @@ body.light
     --primary-color : rgb(128, 202, 226);
     --secondary-color : black;
     --accent-color : rgb(197, 67, 27);
-    --scrollbar-color-bg : white;
-    --scrollbar-thumb-bg : rgba(111, 166, 228, 0.664);
+    --scrollbar-color-bg : rgb(128, 202, 226);
+    --scrollbar-thumb-bg : rgba(79, 151, 233, 0.664);
     --text-colour : rgb(39, 3, 3);
 }
 
@@ -81,7 +85,7 @@ a{
 {
     background-color : var(--primary-color);
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     height:15vh;
     width:100vw;
@@ -92,7 +96,7 @@ a{
 
 .nav-items
 {
-    flex: 1;
+    /* flex: 1; */
     display : flex;
     height : 100%;
     width : 100%;
@@ -101,29 +105,42 @@ a{
     list-style : none;
 }
 .nav-head, .nav-head a
+/* .nav-head a */
 {
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     align-items: center;
-    height: 100%;
-    align-self: center;
+    /* align-self: center; */
     height: 100%;
     font-size : 1.75em;
     color : var(--accent-color);
-    margin-left : 14vw;
+    /* margin-left : 14vw; */
     letter-spacing: -1px;
-    font-family:cursive;
+    font-family:sans-serif;
+    margin-right: auto;
+    margin-left: 10vw;
 }
 .nav-head a{
     margin: 0;
+    height: fit-content;
+}
+
+.nav-links{
+    /* background-color: gray; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 5px;
+    margin-right: 3vw;
 }
 
 .nav-links a
 {
-    flex: 1;
+    /* flex: 1; */
     letter-spacing: 3px;
-    height: 100%;
-    margin-right: 4vw;
+    height: fit-content;
+    /* margin-right: 4vw; */
     font-size: 1.5em;
     color: var(--secondary-color);
     -webkit-transition: 1s ease-in-out;
@@ -144,7 +161,7 @@ a{
 
 .nav-first-link
 {
-    padding-left: 4vw;
+    /* padding-left: 4vw; */
 }
 
 .menu-button
@@ -156,6 +173,7 @@ a{
     padding: 5px;
     cursor: pointer;
     transition:.3s ease all;
+    transition: background-color 1.2s ease all;
     margin-right:10vw;
     display: flex;
     flex-direction: column;
@@ -188,12 +206,17 @@ a{
 .menu-list
 {
     position: absolute;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
     top: 15vh;
-    right: -40vh;
+    /* right: -40vh; */
     list-style: none;
-    transition: all 20s ease-in-out;
     height: 0vh;
-    display: none;
+    overflow: hidden;
+    width: 100vw;
+    /* display: none; */
+    transition: height .5s ease-in-out;
 }
 
 .menu-list li{
@@ -206,6 +229,11 @@ a{
 .vis{
     right: 0;
     display: block;
+    /* height: 100vh; */
+}
+
+.menu-button:hover .vis{
+    height: 300%;
 }
 
  /******** ToggleButton ********/
@@ -301,10 +329,11 @@ a{
 {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    height: 100vh;
+    height: max(100vh,auto);
+    padding-top: 20vh;
     display: flex;
     justify-content: center;
-    align-items:center;
+    /* align-items:center; */
     width: 100vw;
 }
 
@@ -312,8 +341,8 @@ a{
 /* About Image */
 #About img
 {
-    height: 60vh;
-    margin-right: -40px;
+    height: 70vh;
+    margin-right: -5vh;
     z-index: 200;
     object-fit: contain;
 }
@@ -352,7 +381,7 @@ a{
 .AboutTechStack {
     height: fit-content;
     margin-bottom: 20vh;
-    margin-top: 10vh;
+    margin-top: 25vh;
     width: 100vw;
     color: var(--secondary-color);
     display: flex;
@@ -379,8 +408,8 @@ a{
 }
 
 .tech-stack-image{
-    height: 85px;
-    width: 85px;
+    height: 80px;
+    width: 80px;
     margin: 20px;
     border-radius: 50%;
     background-color: rgb(47, 48, 77);
@@ -459,76 +488,182 @@ form{
 
 
 
- /*? media query width 970px and 370px*/
+ /*? media query width 1380px, 1024px, 768px, 550px and 480px*/
 
+ @media screen and (max-width:1380px) {
+    #About img{
+        height: 65vh;
+        margin-left: -5%;
+        margin-right: -4.5vh;
+    }    
 
-@media screen and (max-width:1450px)
-{
-    .About{
-        flex-direction: column;
-        margin-top: 40px;
-        scale: 0.8;
-        margin-bottom: 100px;
-        padding-inline: 40px;
+    .about-text{
+        margin-right: 100px;
+        font-size: 1rem;
     }
-    .about-text
-    {
-        margin:90px;
-        margin-top: -80px;
-        padding-top: 60px;
-        margin-bottom: 200px;
+    .about-text h1{
+        font-size: 2.5rem;
     }
-    .About img{
-        height: 20vw ;
-        width: 20vw;
-    }
-}
+ }
 
-
- @media screen and (max-width:970px) {
+ @media screen and (max-width:1024px) {
     .nav-head{
-        font-size: 1.3em;
+        font-size: 1.4em;
+        /* background-color: green; */
+    }
+    .nav-links a{
+        font-size: 1.2rem;
+    }
+    .nav-links{
+        margin-inline: 15px;
+    }
+    .nav-last-link{
+        margin-right: 10vw;
+    }
+    .toggle-button
+    {
+        scale: 0.8;
     }
     .hero{
-        font-size: 1.5vw;
+        font-size: 10px;
+        /* font-size: 1.5vw; */
     }
+
     .hero-scroll-image{
-        scale: .6;
-        transform : translateY(40px);
-   }
-   .toggle-button{
-    scale: 0.7;
-   }
-   .menu-list{
-    scale: 0.6;
-   }
+        scale: 0.8;
+    }
 
-   .AboutTechStack
-   {
-        font-size: 1vw;
-   }
+    .AboutTechStack{
+        margin-top: 15vh;
+    }
 
-   .AboutTechStack h1
-   {
-        font-size: 4.5vw;
-   }
+    .AboutTechStack h1{
+        font-size: 1.9rem;
+    }
 
-   .techStackContainer{
-    width: 60vw;
-   }
+    .techStackContainer{
+        width: 500px;
+    }
 
-   .tech-stack-image{
-    height: 9vw;
-    width: 9vw;
-    margin: 10px;
-   }
+    .tech-stack-image{
+        height: 60px;   
+        width: 60px;
+        margin: 14px;
+    }
+
+    #About{
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .about-text{
+        margin: 0 70px;
+    }
+
+    #About{
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    #About img{
+        height: 300px;
+        position: relative;
+        top: 75px;
+        left: 15px;
+    }
+ }
+
+ @media screen and (max-width:768px) {
+    .nav-head{
+        font-size: 1.3em;
+        /* background-color: green; */
+    }
+    .nav-links a{
+        font-size: 1.3rem;
+    }
+    .toggle-button
+    {
+        scale: 0.7;
+    }
+    .hero{
+        height: max(100vh,fit-content);
+        /* display: block; */
+        font-size: 8px;
+        padding-inline: 1em;
+        /* font-size: 1.5vw; */
+    }
+
+    .hero h2, .hero h1{
+        padding-inline: 1em;
+        padding-block: 0.3em;
+    }
+
+    .hero-scroll-image{
+        scale: 0.6;
+    }
+
+    .AboutTechStack h1{
+        font-size: 4vw;
+    }
+
+    .techStackContainer{
+        width: 60vw;
+    }
+
+    .tech-stack-image{
+        height: 9vw;   
+        width: 9vw;
+        margin: 12px;
+    }
+
+    .about-text{
+        margin: 0 50px;
+        font-size: 0.9rem;
+    }
+
+
+    #About img{
+        height: 200px;
+        top: 60px;
+    }
+
+    .about-text h1{
+        font-size: 1.8rem;
+    }
 
  }
 
- @media screen and (max-width:370px)
- {
-    .toggle-button{
-        scale: 0.5;
-        font-size:medium;
+ @media screen and (max-width:550px) {
+    #About img{
+        left: 0;
     }
+
+    .about-text
+    {
+        margin-inline: 15px;
+        padding: 25px;
+    }
+ }
+ 
+ 
+ 
+ 
+ @media screen and (max-width:480px) {
+    .about-text
+    {
+        padding: 25px;
+        margin-inline: 15px;
+    }
+ }
+
+
+
+
+ .comingSoon
+ {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
  }

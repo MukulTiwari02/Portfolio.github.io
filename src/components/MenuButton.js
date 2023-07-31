@@ -12,7 +12,9 @@ const MenuButton = () => {
             for(let i=0;i<2;++i){
                 menuButton[i].classList.add('menu-button-lines-active')
 
-                menu.classList.add('vis')
+                // menu.classList.add('vis')
+                // menu.style.display = 'block';
+                menu.style.height = '100vh';
         }
     }   
         else 
@@ -20,7 +22,9 @@ const MenuButton = () => {
             for(let i=0;i<2;++i){
                 menuButton[i].classList.remove('menu-button-lines-active')
         
-            menu.classList.remove('vis')
+            // menu.classList.remove('vis')
+            // menu.style.display = 'hidden';
+            menu.style.height = '0vh';
         }
     }
         setisMenuOpen((isMenuOpen) => !isMenuOpen)

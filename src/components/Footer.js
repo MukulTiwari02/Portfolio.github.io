@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer> Portfolio - Copyright <span>&copy;</span> All Rights reserved</footer>
+    <footer>Copyright <span>&nbsp; &copy; &nbsp;</span> Portfolio &nbsp;-&nbsp; All Rights reserved</footer>
   )
 }
 

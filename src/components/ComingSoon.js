@@ -2,8 +2,8 @@ import React from 'react'
 
 const ComingSoon = () => {
   return (
-    <div className="comingSoon">
-        <code>This Section(s) is Coming Soon</code>
+    <div className="comingSoon" id = 'Projects'>
+        <code> &lt; This Section(s) is Coming Soon / &gt;</code>
     </div>
   )
 }

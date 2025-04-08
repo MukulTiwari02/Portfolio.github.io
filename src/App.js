@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './App.css';
+// import './Responsive.css';
 import Navbar from './components/Navbar'
 import ToggleButton from './components/ToggleButton'
 import Footer from './components/Footer';
@@ -43,9 +44,9 @@ function App() {
       <Hero />  
       <About />
       {/* <Projects /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
       <ComingSoon />
+      <Contact />
+      <Footer />
     </div>
   );
 }

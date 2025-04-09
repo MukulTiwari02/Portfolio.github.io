@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
@@ -289,7 +292,7 @@ a {
   object-fit: cover;
   border-radius: 50%;
   scale: 1.75;
-  transform: translate(-15%, -9%);
+  transform: translate(7%, -9%);
   mix-blend-mode: difference;
 }
 

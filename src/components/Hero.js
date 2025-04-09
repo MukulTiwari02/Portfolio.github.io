@@ -10,7 +10,7 @@ const Hero = () => {
     
   return (
     <div className="hero" id = "hero">
-        <h1>Hi</h1>
+        <h1 className=''>Hi</h1>
         <h2>My name is Mukul Tiwari</h2>
         <h2>I am a <span><Typewriter 
                     cursor={true} 

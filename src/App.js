@@ -43,8 +43,8 @@ function App() {
       <ToggleButton toggleButtonFunction = {toggleButtonFunction} darkMode = {darkMode}/>
       <Hero />  
       <About />
-      {/* <Projects /> */}
-      <ComingSoon />
+      <Projects />
+      {/* <ComingSoon /> */}
       <Contact />
       <Footer />
     </div>

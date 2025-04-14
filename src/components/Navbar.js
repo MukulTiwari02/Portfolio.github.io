@@ -22,7 +22,7 @@ const Navbar = () => {
     <nav className={"nav" + (isScrolled ? " nav-scrolled" : "")}>
       <ul className="nav-items">
         <li className="nav-head">
-          <a className="" href="/#hero">
+          <a className="" href="#hero">
             Mukul Tiwari
           </a>
         </li>

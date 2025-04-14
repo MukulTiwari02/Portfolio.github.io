@@ -20,19 +20,19 @@ const Contact = () => {
       </div>
       <div className="form-container">
         <div className="about-info">
-          <h1>Contact</h1>
-          <div className="my-info">
+          <h1 className='text-3xl text-center w-full'>Contact Me</h1>
+          <div className="my-info flex-wrap sm:mb-7">
             <div className="info">
               <h3>Mobile</h3>
               <h5>+91 XXXXXXXXXX</h5>
             </div>
             <div className="info">
               <h3>Email</h3>
-              <h5>xyz@abc.com</h5>
+              <h5>mukultiwari2020@gmail.com</h5>
             </div>
             <div className="info">
               <h3>Address</h3>
-              <h5>XYZ</h5>
+              <h5>Greater Noida, Uttar Pradesh</h5>
             </div>
           </div>
         </div>

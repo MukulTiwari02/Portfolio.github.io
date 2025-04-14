@@ -10,8 +10,8 @@ const ContactForm = ({formData,setFormData}) => {
   }
 
   const handleSubmit = (e) => {
-      // e.preventDefault();
-      console.log(formData)
+    e.preventDefault();
+    alert('Form not submitted')
   }
 
 

@@ -1,22 +1,60 @@
-import React from 'react'
+import React from "react";
 
 const AboutText = () => {
   return (
-    <div className='about-text'>
+    <div className="about-text">
       <h1>About Me</h1>
-      <p><strong> # </strong> &ensp; I am a final year B.Tech undergrad at <span className="bold">NIT Silchar.</span></p>
-      <br />
-      <p><strong> # </strong> &ensp; I am a <span className="bold">Softare Development Enthusiast</span> with good problem solving skills.</p>
-      <br />
-      <p><strong> # </strong> &ensp; I am a <span className="bold">Full - Stack Web Developer (MERN) </span> learning new things in the field everyday. </p>
-      <br />
-      <p><strong> # </strong> &ensp; My interests include learning more and more about the present and near future technology and things related to it.</p>
-      <br />
-      <p><strong> # </strong> &ensp; As a tech geek I am exploring more and more tech interests and have picked interesting things to learn and I hope to achieve perfection in them.</p>
-      <br />
-      <p><strong> # </strong> &ensp;I look forward to work with tech enthusiasts like me and add value in the field</p>  
-    </div>
-  )
-}
+      <div className="space-y-6">
+        <div className="flex items-center gap-x-5 text-2xl tracking-wide sm:leading-loose leading-normal font-mono">
+          <strong className="text-3xl sm:text-2xl">✧</strong>
+          <p>
+            I am a final year B.Tech undergraduate at{" "}
+            <span className="bold">NIT Silchar.</span>
+          </p>
+        </div>
 
-export default AboutText
+        <div className="flex items-center gap-x-5 text-2xl tracking-wide sm:leading-loose leading-normal font-mono">
+          <strong className="text-3xl sm:text-2xl">✧</strong>
+          <p>
+            I’m a <span className="bold">Software Developer</span> passionate
+            about building solutions and solving complex problems.
+          </p>
+        </div>
+
+        <div className="flex items-center gap-x-5 text-2xl tracking-wide sm:leading-loose leading-normal font-mono">
+          <strong className="text-3xl sm:text-2xl">✧</strong>
+          <p>
+            I'm a <span className="bold">Full-Stack MERN Developer</span> driven
+            by curiosity and continuous learning.
+          </p>
+        </div>
+
+        <div className="flex items-center gap-x-5 text-2xl tracking-wide sm:leading-loose leading-normal font-mono">
+          <strong className="text-3xl sm:text-2xl">✧</strong>
+          <p>
+            As a tech enthusiast, I'm always exploring new areas of interest and
+            enjoying the process of learning along the way.
+          </p>
+        </div>
+
+        <div className="flex items-center gap-x-5 text-2xl tracking-wide sm:leading-loose leading-normal font-mono">
+          <strong className="text-3xl sm:text-2xl">✧</strong>
+          <p>
+            I'm deeply interested in learning about today's tech and the
+            innovations shaping our future.
+          </p>
+        </div>
+
+        <div className="flex items-center gap-x-5 text-2xl tracking-wide leading-relaxed font-mono">
+          <strong className="text-3xl sm:text-2xl">✧</strong>
+          <p>
+            I look forward to collaborating with fellow tech enthusiasts and
+            contributing meaningfully to the field.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AboutText;

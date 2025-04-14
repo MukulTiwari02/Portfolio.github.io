@@ -14,7 +14,7 @@ const Projects = () => {
       >
         Crafted With Code
       </h1>
-      <div className="projects w-full mb-16 h-[500px] flex">
+      <div className="projects w-full mb-16 h-[500px] flex ">
         <div className="project-list text-white h-full max-w-[50%] sm:flex-grow px-5 sm:px-20">
           <h1
             className="text-xl sm:text-4xl sm:-mt-6"
@@ -22,7 +22,7 @@ const Projects = () => {
           >
             Projects
           </h1>
-          <div className="flex flex-col gap-0.5 mt-5 h-full overflow-x-hidden">
+          <div className="flex flex-col gap-0.5 mt-5 h-full scrollbar-sleek overflow-x-hidden">
             {projectArray.map((project) => (
               <button
                 onClick={() => {
@@ -30,16 +30,16 @@ const Projects = () => {
                     return setCurrentSelectedProject(project);
                 }}
                 className={
-                  "transition-none flex flex-col gap-2 sm:flex-row text-sm sm:text-xl text-left p-3 sm:p-6 hover:bg-green-500 " +
+                  "transition-none flex flex-col sm:gap-2 sm:flex-row text-sm sm:text-2xl text-left px-3 py-2 sm:p-6 hover:bg-green-600 " +
                   (currentSelectedProject.name === project.name
-                    ? "bg-green-500"
-                    : " bg-[rgb(231,104,65)]")
+                    ? "bg-green-600"
+                    : " bg-[rgb(231,104,65)] active:scale-95")
                 }
               >
                 <div>{project.name}</div>
                 <a
                   target="_blank"
-                  className="ml-auto text-black"
+                  className="sm:ml-auto w-fit text-black hover:-translate-y-0.5 hover:underline transition-transform duration-200"
                   href={project.codeLink}
                 >
                   Code
@@ -50,7 +50,7 @@ const Projects = () => {
         </div>
 
         <div className="project-container text-white h-full w-[50%] relative">
-          <div className="h-full w-[220%] sm:w-[180%]  -translate-x-[30%] sm:-translate-x-[25%] scale-[0.40] sm:scale-[0.45] absolute top-0 left-0 flex justify-center items-center">
+          <div className="h-full w-[220%] sm:w-[180%]  -translate-x-[30%] sm:-translate-x-[25%] translate-y-[6%] scale-[0.40] sm:scale-[0.45] absolute top-0 left-0 flex justify-center items-center">
             {currentSelectedProject.link !== "" && (
               <a
                 href={currentSelectedProject.link}

@@ -5,14 +5,19 @@ const projectArray = [
     codeLink: "https://github.com/MukulTiwari02/AI-DevChatApp",
   },
   {
-    name: "URL Shortener",
-    link: "https://url-shortener-app-two.vercel.app/",
-    codeLink: "https://github.com/MukulTiwari02/URL_Shortener_App",
+    name: "Xora",
+    link: "https://xora-demo.netlify.app/",
+    codeLink: "https://github.com/MukulTiwari02/Xora-landing-page",
   },
   {
     name: "Progressly",
     link: "https://progressly-demo.vercel.app/",
     codeLink: "https://github.com/MukulTiwari02/Progressly-landing-page",
+  },
+  {
+    name: "URL Shortener",
+    link: "https://url-shortener-app-two.vercel.app/",
+    codeLink: "https://github.com/MukulTiwari02/URL_Shortener_App",
   },
   {
     name: "Mini Games Hub",

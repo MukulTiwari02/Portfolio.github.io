@@ -146,7 +146,7 @@ const Hero = ({ darkMode }) => {
             </div>
           </button>
         </a>
-        <a href="/#About">
+        <a href="#About">
           <button
             style={{ color: "var(--secondary-color)" }}
             type="button"

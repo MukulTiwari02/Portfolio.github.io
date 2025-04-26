@@ -15,14 +15,14 @@ const projectArray = [
     codeLink: "https://github.com/MukulTiwari02/Progressly-landing-page",
   },
   {
+    name: "PlayPico - Mini Games Hub",
+    link: "https://playpico.vercel.app/",
+    codeLink: "https://github.com/MukulTiwari02/PlayPico---mini-games-hub",
+  },
+  {
     name: "URL Shortener",
     link: "https://url-shortener-app-two.vercel.app/",
     codeLink: "https://github.com/MukulTiwari02/URL_Shortener_App",
-  },
-  {
-    name: "Mini Games Hub",
-    link: "https://mini-games-js.vercel.app/",
-    codeLink: "https://github.com/MukulTiwari02/mini-games-js",
   },
   {
     name: "Expense Tracker",
